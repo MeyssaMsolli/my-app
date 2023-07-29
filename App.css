@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allows images to wrap to the next row */
+  justify-content: space-around; /* Adjust as needed */
+}
+
+.product-card {
+  /* Your card styles */
+}
+
+.product-image {
+  width: 70px; /* Adjust image size as needed */
+  height: 70px;
+  background-size: cover; /* Ensure the image covers the container */
+  background-repeat: no-repeat;
+  animation: slideAnimation 3s linear infinite; /* Adjust the animation timing */
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; */
+}
+
+@keyframes slideAnimation {
+  0% {
+    opacity: 0; /* Start with opacity 0 to hide the image */
+  }
+  100% {
+    opacity: 1; /* End with opacity 1 to show the image */
+  }
+}
+
